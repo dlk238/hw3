@@ -88,23 +88,29 @@ a {
 
 .header2 {
 	height: 40px;
-	background: url(../img/bg1.gif) repeat-x;
+	background: linear-gradient(to bottom, #5E5E5E, #434141);
 	text-align:left;
 }
-
+div.menu {
+	padding: 0;
+	margin:  0;
+}
 div.menu a{
    	height: 40px;
 	display: inline-block;
-    padding: 0 40px; 
+	padding: 0 40px 0 40px;
     color:#ffffff;
     font: 15px Arial, sans-serif;
 	line-height: 37px;
+	margin:  0;
 }
 
 div.menu a:hover, div.menu a.current{
-    background: url(../img/bg2.gif) repeat-x;
+	padding: 0 39px 0 39px;
+	background: linear-gradient(to bottom, #474747, #2B2B2B);
 	border-left:1px solid #838383;
 	border-right:1px solid #838383;
+	
 }
 
 
@@ -146,6 +152,7 @@ div.menu a:hover, div.menu a.current{
 	padding: 0 0 0 40px;
 	color:#2c2c2c;
 	background: #f9f9f9;
+	transition: .3s;
 }
 
 /* Content
@@ -189,6 +196,10 @@ div.menu2 a{
 	display: inline-block;
     padding: 0 40px;
 	color:#2c2c2c;
+}
+
+.menu2 a:hover, .menu2 a.current{
+	text-decoration:underline;
 }
 
 .copyrt{
